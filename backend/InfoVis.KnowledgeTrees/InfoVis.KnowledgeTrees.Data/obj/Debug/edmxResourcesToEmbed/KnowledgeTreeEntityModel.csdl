@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KnowledgeTreesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Chapter">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ClassId" Type="Int32" Nullable="false" />
+    <Property Name="SubjectInLevelId" Type="Int32" Nullable="false" />
+    <Property Name="SubjectFieldId" Type="Int32" />
+    <NavigationProperty Name="Topics" Relationship="Self.FK_Chapter_Topics" FromRole="ChapterSet" ToRole="TopicSet" />
+    <NavigationProperty Name="Class" Relationship="Self.FK_ChapterSet_ClassSet" FromRole="ChapterSet" ToRole="ClassSet" />
+    <NavigationProperty Name="SubjectInLevel" Relationship="Self.FK_ChapterSet_Subject" FromRole="ChapterSet" ToRole="SubjectInLevelSet" />
+    <NavigationProperty Name="SubjectField" Relationship="Self.FK_ChapterSet_ToSubjectField" FromRole="ChapterSet" ToRole="SubjectField" />
+  </EntityType>
+  <EntityType Name="Class">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LevelId" Type="Int32" Nullable="false" />
+    <Property Name="Number" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Chapters" Relationship="Self.FK_ChapterSet_ClassSet" FromRole="ClassSet" ToRole="ChapterSet" />
+    <NavigationProperty Name="Level" Relationship="Self.FK_Level_Class" FromRole="ClassSet" ToRole="LevelSet" />
+  </EntityType>
+  <EntityType Name="Level">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Classes" Relationship="Self.FK_Level_Class" FromRole="LevelSet" ToRole="ClassSet" />
+    <NavigationProperty Name="SubjectsInLevel" Relationship="Self.FK_SubjectInLevelLevel" FromRole="LevelSet" ToRole="SubjectInLevelSet" />
+  </EntityType>
+  <EntityType Name="SubjectField">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="SubjectId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Chapters" Relationship="Self.FK_ChapterSet_ToSubjectField" FromRole="SubjectField" ToRole="ChapterSet" />
+    <NavigationProperty Name="Subject" Relationship="Self.FK_SubjectField_ToSubject" FromRole="SubjectField" ToRole="SubjectSet" />
+  </EntityType>
+  <EntityType Name="SubjectInLevel">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="LevelId" Type="Int32" Nullable="false" />
+    <Property Name="SubjectId" Type="Int32" Nullable="false" />
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CurriculumName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Chapters" Relationship="Self.FK_ChapterSet_Subject" FromRole="SubjectInLevelSet" ToRole="ChapterSet" />
+    <NavigationProperty Name="Level" Relationship="Self.FK_SubjectInLevelLevel" FromRole="SubjectInLevelSet" ToRole="LevelSet" />
+    <NavigationProperty Name="Subject" Relationship="Self.FK_SubjectInLevelSubject" FromRole="SubjectInLevelSet" ToRole="SubjectSet" />
+  </EntityType>
+  <EntityType Name="Subject">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="SubjectFields" Relationship="Self.FK_SubjectField_ToSubject" FromRole="SubjectSet" ToRole="SubjectField" />
+    <NavigationProperty Name="SubjectsInLevels" Relationship="Self.FK_SubjectInLevelSubject" FromRole="SubjectSet" ToRole="SubjectInLevelSet" />
+  </EntityType>
+  <EntityType Name="TopicDependencyRelation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DependantId" Type="Int32" Nullable="false" />
+    <Property Name="ReliesOnId" Type="Int32" Nullable="false" />
+    <Property Name="Order" Type="Int32" Nullable="false" />
+    <Property Name="DependencyRelationTypeId" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="DependantTopic" Relationship="Self.FK_TopicDependency_ToDependant" FromRole="TopicDependencyRelation" ToRole="TopicSet" />
+    <NavigationProperty Name="TopicDependencyRelationType" Relationship="Self.FK_TopicDependency_ToRelationType" FromRole="TopicDependencyRelation" ToRole="TopicDependencyRelationType" />
+    <NavigationProperty Name="ReliesOnTopic" Relationship="Self.FK_TopicDependency_ToReliesOn" FromRole="TopicDependencyRelation" ToRole="TopicSet" />
+  </EntityType>
+  <EntityType Name="TopicDependencyRelationType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="TopicDependencyRelations" Relationship="Self.FK_TopicDependency_ToRelationType" FromRole="TopicDependencyRelationType" ToRole="TopicDependencyRelation" />
+  </EntityType>
+  <EntityType Name="Topic">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ChapterId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Chapter" Relationship="Self.FK_Chapter_Topics" FromRole="TopicSet" ToRole="ChapterSet" />
+    <NavigationProperty Name="BackwardDependencies" Relationship="Self.FK_TopicDependency_ToDependant" FromRole="TopicSet" ToRole="TopicDependencyRelation" />
+    <NavigationProperty Name="ForwardDependencies" Relationship="Self.FK_TopicDependency_ToReliesOn" FromRole="TopicSet" ToRole="TopicDependencyRelation" />
+  </EntityType>
+  <Association Name="FK_Chapter_Topics">
+    <End Role="ChapterSet" Type="KnowledgeTreesModel.Chapter" Multiplicity="1" />
+    <End Role="TopicSet" Type="KnowledgeTreesModel.Topic" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ChapterSet">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TopicSet">
+        <PropertyRef Name="ChapterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ChapterSet_ClassSet">
+    <End Role="ClassSet" Type="KnowledgeTreesModel.Class" Multiplicity="1" />
+    <End Role="ChapterSet" Type="KnowledgeTreesModel.Chapter" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ClassSet">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ChapterSet">
+        <PropertyRef Name="ClassId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ChapterSet_Subject">
+    <End Role="SubjectInLevelSet" Type="KnowledgeTreesModel.SubjectInLevel" Multiplicity="1" />
+    <End Role="ChapterSet" Type="KnowledgeTreesModel.Chapter" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SubjectInLevelSet">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ChapterSet">
+        <PropertyRef Name="SubjectInLevelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ChapterSet_ToSubjectField">
+    <End Role="SubjectField" Type="Self.SubjectField" Multiplicity="0..1" />
+    <End Role="ChapterSet" Type="KnowledgeTreesModel.Chapter" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SubjectField">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ChapterSet">
+        <PropertyRef Name="SubjectFieldId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Level_Class">
+    <End Role="LevelSet" Type="KnowledgeTreesModel.Level" Multiplicity="1" />
+    <End Role="ClassSet" Type="KnowledgeTreesModel.Class" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LevelSet">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ClassSet">
+        <PropertyRef Name="LevelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SubjectInLevelLevel">
+    <End Role="LevelSet" Type="KnowledgeTreesModel.Level" Multiplicity="1" />
+    <End Role="SubjectInLevelSet" Type="KnowledgeTreesModel.SubjectInLevel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LevelSet">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SubjectInLevelSet">
+        <PropertyRef Name="LevelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SubjectField_ToSubject">
+    <End Role="SubjectSet" Type="KnowledgeTreesModel.Subject" Multiplicity="1" />
+    <End Role="SubjectField" Type="Self.SubjectField" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SubjectSet">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SubjectField">
+        <PropertyRef Name="SubjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SubjectInLevelSubject">
+    <End Role="SubjectSet" Type="KnowledgeTreesModel.Subject" Multiplicity="1" />
+    <End Role="SubjectInLevelSet" Type="KnowledgeTreesModel.SubjectInLevel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SubjectSet">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SubjectInLevelSet">
+        <PropertyRef Name="SubjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TopicDependency_ToDependant">
+    <End Role="TopicSet" Type="KnowledgeTreesModel.Topic" Multiplicity="1" />
+    <End Role="TopicDependencyRelation" Type="Self.TopicDependencyRelation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TopicSet">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TopicDependencyRelation">
+        <PropertyRef Name="DependantId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TopicDependency_ToRelationType">
+    <End Role="TopicDependencyRelationType" Type="Self.TopicDependencyRelationType" Multiplicity="1" />
+    <End Role="TopicDependencyRelation" Type="Self.TopicDependencyRelation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TopicDependencyRelationType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TopicDependencyRelation">
+        <PropertyRef Name="DependencyRelationTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TopicDependency_ToReliesOn">
+    <End Role="TopicSet" Type="KnowledgeTreesModel.Topic" Multiplicity="1" />
+    <End Role="TopicDependencyRelation" Type="Self.TopicDependencyRelation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TopicSet">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TopicDependencyRelation">
+        <PropertyRef Name="ReliesOnId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="KnowledgeTreesEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Chapters" EntityType="KnowledgeTreesModel.Chapter" />
+    <EntitySet Name="Classes" EntityType="KnowledgeTreesModel.Class" />
+    <EntitySet Name="Levels" EntityType="KnowledgeTreesModel.Level" />
+    <EntitySet Name="SubjectFields" EntityType="Self.SubjectField" />
+    <EntitySet Name="SubjectInLevels" EntityType="KnowledgeTreesModel.SubjectInLevel" />
+    <EntitySet Name="Subjects" EntityType="KnowledgeTreesModel.Subject" />
+    <EntitySet Name="TopicDependencyRelations" EntityType="Self.TopicDependencyRelation" />
+    <EntitySet Name="TopicDependencyRelationTypes" EntityType="Self.TopicDependencyRelationType" />
+    <EntitySet Name="Topics" EntityType="KnowledgeTreesModel.Topic" />
+    <AssociationSet Name="FK_Chapter_Topics" Association="Self.FK_Chapter_Topics">
+      <End Role="ChapterSet" EntitySet="Chapters" />
+      <End Role="TopicSet" EntitySet="Topics" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ChapterSet_ClassSet" Association="Self.FK_ChapterSet_ClassSet">
+      <End Role="ClassSet" EntitySet="Classes" />
+      <End Role="ChapterSet" EntitySet="Chapters" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ChapterSet_Subject" Association="Self.FK_ChapterSet_Subject">
+      <End Role="SubjectInLevelSet" EntitySet="SubjectInLevels" />
+      <End Role="ChapterSet" EntitySet="Chapters" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ChapterSet_ToSubjectField" Association="Self.FK_ChapterSet_ToSubjectField">
+      <End Role="SubjectField" EntitySet="SubjectFields" />
+      <End Role="ChapterSet" EntitySet="Chapters" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Level_Class" Association="Self.FK_Level_Class">
+      <End Role="LevelSet" EntitySet="Levels" />
+      <End Role="ClassSet" EntitySet="Classes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SubjectInLevelLevel" Association="Self.FK_SubjectInLevelLevel">
+      <End Role="LevelSet" EntitySet="Levels" />
+      <End Role="SubjectInLevelSet" EntitySet="SubjectInLevels" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SubjectField_ToSubject" Association="Self.FK_SubjectField_ToSubject">
+      <End Role="SubjectSet" EntitySet="Subjects" />
+      <End Role="SubjectField" EntitySet="SubjectFields" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SubjectInLevelSubject" Association="Self.FK_SubjectInLevelSubject">
+      <End Role="SubjectSet" EntitySet="Subjects" />
+      <End Role="SubjectInLevelSet" EntitySet="SubjectInLevels" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TopicDependency_ToDependant" Association="Self.FK_TopicDependency_ToDependant">
+      <End Role="TopicSet" EntitySet="Topics" />
+      <End Role="TopicDependencyRelation" EntitySet="TopicDependencyRelations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TopicDependency_ToRelationType" Association="Self.FK_TopicDependency_ToRelationType">
+      <End Role="TopicDependencyRelationType" EntitySet="TopicDependencyRelationTypes" />
+      <End Role="TopicDependencyRelation" EntitySet="TopicDependencyRelations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TopicDependency_ToReliesOn" Association="Self.FK_TopicDependency_ToReliesOn">
+      <End Role="TopicSet" EntitySet="Topics" />
+      <End Role="TopicDependencyRelation" EntitySet="TopicDependencyRelations" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

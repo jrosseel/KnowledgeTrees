@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9ee1817e682a434593d8b78f82ac996c" Name="Diagram1">
+        <EntityTypeShape EntityType="KnowledgeTreesModel.Chapter" Width="1.5" PointX="5.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="KnowledgeTreesModel.Class" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="KnowledgeTreesModel.Level" Width="1.5" PointX="3.625" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="KnowledgeTreesModel.SubjectField" Width="1.5" PointX="1.375" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="KnowledgeTreesModel.SubjectInLevel" Width="2.625" PointX="3.875" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="KnowledgeTreesModel.Subject" Width="1.5" PointX="0.5" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="KnowledgeTreesModel.TopicDependencyRelation" Width="2.625" PointX="9.875" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="KnowledgeTreesModel.TopicDependencyRelationType" Width="2.75" PointX="7.5" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="KnowledgeTreesModel.Topic" Width="2.125" PointX="7.125" PointY="4.875" IsExpanded="true" />
+        <AssociationConnector Association="KnowledgeTreesModel.FK_Chapter_Topics" ManuallyRouted="false" />
+        <AssociationConnector Association="KnowledgeTreesModel.FK_ChapterSet_ClassSet" ManuallyRouted="false" />
+        <AssociationConnector Association="KnowledgeTreesModel.FK_ChapterSet_Subject" ManuallyRouted="false" />
+        <AssociationConnector Association="KnowledgeTreesModel.FK_ChapterSet_ToSubjectField" ManuallyRouted="false" />
+        <AssociationConnector Association="KnowledgeTreesModel.FK_Level_Class" ManuallyRouted="false" />
+        <AssociationConnector Association="KnowledgeTreesModel.FK_SubjectInLevelLevel" ManuallyRouted="false" />
+        <AssociationConnector Association="KnowledgeTreesModel.FK_SubjectField_ToSubject" ManuallyRouted="false" />
+        <AssociationConnector Association="KnowledgeTreesModel.FK_SubjectInLevelSubject" ManuallyRouted="false" />
+        <AssociationConnector Association="KnowledgeTreesModel.FK_TopicDependency_ToDependant" ManuallyRouted="false" />
+        <AssociationConnector Association="KnowledgeTreesModel.FK_TopicDependency_ToRelationType" ManuallyRouted="false" />
+        <AssociationConnector Association="KnowledgeTreesModel.FK_TopicDependency_ToReliesOn" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

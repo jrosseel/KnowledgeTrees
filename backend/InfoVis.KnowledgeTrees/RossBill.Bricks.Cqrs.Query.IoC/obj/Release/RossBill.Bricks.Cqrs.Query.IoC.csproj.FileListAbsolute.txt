@@ -1,0 +1,13 @@
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs.Query.IoC\bin\Release\RossBill.Bricks.Cqrs.Query.IoC.dll
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs.Query.IoC\bin\Release\RossBill.Bricks.Cqrs.Query.IoC.pdb
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs.Query.IoC\bin\Release\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs.Query.IoC\bin\Release\Microsoft.Practices.Unity.dll
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs.Query.IoC\bin\Release\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs.Query.IoC\bin\Release\RossBill.Bricks.Cqrs.dll
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs.Query.IoC\bin\Release\RossBill.Bricks.Cqrs.pdb
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs.Query.IoC\bin\Release\Microsoft.Practices.Unity.xml
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs.Query.IoC\bin\Release\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs.Query.IoC\bin\Release\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs.Query.IoC\obj\Release\RossBill.Bricks.Cqrs.Query.IoC.csprojResolveAssemblyReference.cache
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs.Query.IoC\obj\Release\RossBill.Bricks.Cqrs.Query.IoC.dll
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs.Query.IoC\obj\Release\RossBill.Bricks.Cqrs.Query.IoC.pdb

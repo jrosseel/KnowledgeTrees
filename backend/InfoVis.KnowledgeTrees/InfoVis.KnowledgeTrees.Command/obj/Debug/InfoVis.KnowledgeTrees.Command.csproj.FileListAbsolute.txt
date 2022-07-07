@@ -1,0 +1,4 @@
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\InfoVis.KnowledgeTrees.Command\bin\Debug\InfoVis.KnowledgeTrees.Command.dll
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\InfoVis.KnowledgeTrees.Command\bin\Debug\InfoVis.KnowledgeTrees.Command.pdb
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\InfoVis.KnowledgeTrees.Command\obj\Debug\InfoVis.KnowledgeTrees.Command.dll
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\InfoVis.KnowledgeTrees.Command\obj\Debug\InfoVis.KnowledgeTrees.Command.pdb

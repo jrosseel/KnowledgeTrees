@@ -1,0 +1,16 @@
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\InfoVis.KnowledgeTrees.Repository\bin\Debug\InfoVis.KnowledgeTrees.SqlQueryRepository.dll.config
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\InfoVis.KnowledgeTrees.Repository\bin\Debug\InfoVis.KnowledgeTrees.SqlQueryRepository.dll
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\InfoVis.KnowledgeTrees.Repository\bin\Debug\InfoVis.KnowledgeTrees.SqlQueryRepository.pdb
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\InfoVis.KnowledgeTrees.Repository\bin\Debug\EntityFramework.dll
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\InfoVis.KnowledgeTrees.Repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\InfoVis.KnowledgeTrees.Repository\bin\Debug\InfoVis.KnowledgeTrees.Data.dll
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\InfoVis.KnowledgeTrees.Repository\bin\Debug\RossBill.Bricks.Data.dll
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\InfoVis.KnowledgeTrees.Repository\bin\Debug\RossBill.Bricks.Data.Sql.dll
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\InfoVis.KnowledgeTrees.Repository\bin\Debug\InfoVis.KnowledgeTrees.Data.pdb
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\InfoVis.KnowledgeTrees.Repository\bin\Debug\RossBill.Bricks.Data.Sql.pdb
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\InfoVis.KnowledgeTrees.Repository\bin\Debug\RossBill.Bricks.Data.pdb
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\InfoVis.KnowledgeTrees.Repository\bin\Debug\EntityFramework.xml
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\InfoVis.KnowledgeTrees.Repository\bin\Debug\EntityFramework.SqlServer.xml
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\InfoVis.KnowledgeTrees.Repository\obj\Debug\InfoVis.KnowledgeTrees.SqlQueryRepository.dll
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\InfoVis.KnowledgeTrees.Repository\obj\Debug\InfoVis.KnowledgeTrees.SqlQueryRepository.pdb
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\InfoVis.KnowledgeTrees.Repository\obj\Debug\InfoVis.KnowledgeTrees.SqlQueryRepository.csprojResolveAssemblyReference.cache

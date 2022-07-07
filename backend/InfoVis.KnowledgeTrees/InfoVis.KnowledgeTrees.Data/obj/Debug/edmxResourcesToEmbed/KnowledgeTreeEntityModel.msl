@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="knowledgetreesModelStoreContainer" CdmEntityContainer="KnowledgeTreesEntities">
+    <EntitySetMapping Name="Chapters">
+      <EntityTypeMapping TypeName="KnowledgeTreesModel.Chapter">
+        <MappingFragment StoreEntitySet="ChapterSet">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ClassId" ColumnName="ClassId" />
+          <ScalarProperty Name="SubjectInLevelId" ColumnName="SubjectInLevelId" />
+          <ScalarProperty Name="SubjectFieldId" ColumnName="SubjectFieldId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Classes">
+      <EntityTypeMapping TypeName="KnowledgeTreesModel.Class">
+        <MappingFragment StoreEntitySet="ClassSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LevelId" ColumnName="LevelId" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Levels">
+      <EntityTypeMapping TypeName="KnowledgeTreesModel.Level">
+        <MappingFragment StoreEntitySet="LevelSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SubjectFields">
+      <EntityTypeMapping TypeName="KnowledgeTreesModel.SubjectField">
+        <MappingFragment StoreEntitySet="SubjectField">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SubjectId" ColumnName="SubjectId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SubjectInLevels">
+      <EntityTypeMapping TypeName="KnowledgeTreesModel.SubjectInLevel">
+        <MappingFragment StoreEntitySet="SubjectInLevelSet">
+          <ScalarProperty Name="LevelId" ColumnName="LevelId" />
+          <ScalarProperty Name="SubjectId" ColumnName="SubjectId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CurriculumName" ColumnName="CurriculumName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subjects">
+      <EntityTypeMapping TypeName="KnowledgeTreesModel.Subject">
+        <MappingFragment StoreEntitySet="SubjectSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TopicDependencyRelations">
+      <EntityTypeMapping TypeName="KnowledgeTreesModel.TopicDependencyRelation">
+        <MappingFragment StoreEntitySet="TopicDependencyRelation">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DependantId" ColumnName="DependantId" />
+          <ScalarProperty Name="ReliesOnId" ColumnName="ReliesOnId" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="DependencyRelationTypeId" ColumnName="DependencyRelationTypeId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TopicDependencyRelationTypes">
+      <EntityTypeMapping TypeName="KnowledgeTreesModel.TopicDependencyRelationType">
+        <MappingFragment StoreEntitySet="TopicDependencyRelationType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Topics">
+      <EntityTypeMapping TypeName="KnowledgeTreesModel.Topic">
+        <MappingFragment StoreEntitySet="TopicSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ChapterId" ColumnName="ChapterId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,29 @@
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs.Query.IoC\bin\Debug\RossBill.Bricks.Cqrs.Query.IoC.dll
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs.Query.IoC\bin\Debug\RossBill.Bricks.Cqrs.Query.IoC.pdb
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs.Query.IoC\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs.Query.IoC\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs.Query.IoC\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs.Query.IoC\bin\Debug\RossBill.Bricks.Cqrs.dll
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs.Query.IoC\bin\Debug\RossBill.Bricks.Cqrs.pdb
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs.Query.IoC\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs.Query.IoC\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs.Query.IoC\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs.Query.IoC\obj\Debug\RossBill.Bricks.Cqrs.Query.IoC.csprojResolveAssemblyReference.cache
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs.Query.IoC\obj\Debug\RossBill.Bricks.Cqrs.Query.IoC.dll
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs.Query.IoC\obj\Debug\RossBill.Bricks.Cqrs.Query.IoC.pdb
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\RossBill.Bricks.Cqrs.Query.IoC\bin\Debug\Microsoft.Practices.Unity.xml
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\RossBill.Bricks.Cqrs.Query.IoC\bin\Debug\RossBill.Bricks.Cqrs.Query.IoC.dll
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\RossBill.Bricks.Cqrs.Query.IoC\bin\Debug\RossBill.Bricks.Cqrs.Query.IoC.pdb
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\RossBill.Bricks.Cqrs.Query.IoC\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\RossBill.Bricks.Cqrs.Query.IoC\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\RossBill.Bricks.Cqrs.Query.IoC\bin\Debug\Microsoft.Practices.Unity.dll
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\RossBill.Bricks.Cqrs.Query.IoC\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\RossBill.Bricks.Cqrs.Query.IoC\bin\Debug\RossBill.Bricks.Cqrs.dll
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\RossBill.Bricks.Cqrs.Query.IoC\bin\Debug\RossBill.Bricks.Cqrs.pdb
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\RossBill.Bricks.Cqrs.Query.IoC\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\RossBill.Bricks.Cqrs.Query.IoC\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\RossBill.Bricks.Cqrs.Query.IoC\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\RossBill.Bricks.Cqrs.Query.IoC\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\RossBill.Bricks.Cqrs.Query.IoC\obj\Debug\RossBill.Bricks.Cqrs.Query.IoC.csprojResolveAssemblyReference.cache
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\RossBill.Bricks.Cqrs.Query.IoC\obj\Debug\RossBill.Bricks.Cqrs.Query.IoC.dll
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\RossBill.Bricks.Cqrs.Query.IoC\obj\Debug\RossBill.Bricks.Cqrs.Query.IoC.pdb

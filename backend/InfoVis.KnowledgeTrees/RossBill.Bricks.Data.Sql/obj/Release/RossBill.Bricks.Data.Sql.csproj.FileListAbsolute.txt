@@ -1,0 +1,12 @@
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Data.Sql\bin\Release\RossBill.Bricks.Data.Sql.dll.config
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Data.Sql\bin\Release\RossBill.Bricks.Data.Sql.dll
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Data.Sql\bin\Release\RossBill.Bricks.Data.Sql.pdb
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Data.Sql\bin\Release\EntityFramework.dll
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Data.Sql\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Data.Sql\bin\Release\RossBill.Bricks.Data.dll
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Data.Sql\bin\Release\RossBill.Bricks.Data.pdb
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Data.Sql\bin\Release\EntityFramework.xml
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Data.Sql\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Data.Sql\obj\Release\RossBill.Bricks.Data.Sql.csprojResolveAssemblyReference.cache
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Data.Sql\obj\Release\RossBill.Bricks.Data.Sql.dll
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Data.Sql\obj\Release\RossBill.Bricks.Data.Sql.pdb

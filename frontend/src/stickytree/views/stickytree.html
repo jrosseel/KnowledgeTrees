@@ -1,0 +1,33 @@
+<div class="col-xs-12" ng-controller="StickytreeController">
+	<div id="header-breadcrumbs" class="col-xs-2 no-pad">
+		<h4>Subject</h4>
+		<select id="breadcrumb-subject-select"
+	    		class="breadcrumb-select subject-header-breadcrumbs-dropdown"
+	            ng-show:"vm.isLoaded"
+	    		ng-model="vm.selectedSubject"
+	            ng-options="subject for subject in vm.subjects"
+
+				ng-change="vm.renderKnowledgeTree()">
+	    </select>
+	    <br/>
+	    <div style="margin-top: 5px;">Scope to topic: <input style="position: relative; top: 3px;" type="checkbox" class="check" ng-model="vm.scopeToTopic" ng-change="vm.renderKnowledgeTree()"/></div>
+
+		<div class=legendBox>
+			<h4>Study Fields</h4>
+			<div id="legendBase"></div>
+		</div>
+
+		<div class="infoBox">
+			<h4>Chapter Info</h4>
+			<div id="nodeInfo"><i>Hover over a chapter or link to see more info.</i></div>
+		</div>
+
+	</div>
+	<div id="d3-container" class="col-xs-10">
+		<h4 style="text-align: center; margin-top: 10px;"></h4>
+		<div class="col-xs-12 no-pad">
+			<div id="d3-renderframe" class="clearfix"></div>
+		</div>
+	</div>
+
+</div>

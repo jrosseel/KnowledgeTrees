@@ -1,0 +1,20 @@
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs\bin\Debug\RossBill.Bricks.Cqrs.dll.config
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs\bin\Debug\RossBill.Bricks.Cqrs.dll
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs\bin\Debug\RossBill.Bricks.Cqrs.pdb
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs\bin\Debug\EntityFramework.dll
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs\bin\Debug\EntityFramework.xml
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs\obj\Debug\RossBill.Bricks.Cqrs.csprojResolveAssemblyReference.cache
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs\obj\Debug\RossBill.Bricks.Cqrs.dll
+C:\Users\jente\Documents\Visual Studio 2015\Projects\RossBill.EMwalimu\RossBill.Bricks.Cqrs\obj\Debug\RossBill.Bricks.Cqrs.pdb
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\RossBill.Bricks.Cqrs\bin\Debug\RossBill.Bricks.Cqrs.dll.config
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\RossBill.Bricks.Cqrs\bin\Debug\RossBill.Bricks.Cqrs.dll
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\RossBill.Bricks.Cqrs\bin\Debug\RossBill.Bricks.Cqrs.pdb
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\RossBill.Bricks.Cqrs\bin\Debug\EntityFramework.dll
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\RossBill.Bricks.Cqrs\bin\Debug\EntityFramework.SqlServer.dll
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\RossBill.Bricks.Cqrs\bin\Debug\EntityFramework.xml
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\RossBill.Bricks.Cqrs\bin\Debug\EntityFramework.SqlServer.xml
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\RossBill.Bricks.Cqrs\obj\Debug\RossBill.Bricks.Cqrs.dll
+C:\dev\knowledgetrees\backend\InfoVis.KnowledgeTrees\RossBill.Bricks.Cqrs\obj\Debug\RossBill.Bricks.Cqrs.pdb
+C:\dev\KnowledgeTrees\backend\InfoVis.KnowledgeTrees\RossBill.Bricks.Cqrs\obj\Debug\RossBill.Bricks.Cqrs.csprojResolveAssemblyReference.cache

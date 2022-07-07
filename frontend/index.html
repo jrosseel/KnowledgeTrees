@@ -1,0 +1,55 @@
+ <html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Simplified and intelligent exam revision." />
+    <meta name="author" content="Elewa Company Ltd."/>
+    <meta name="fragment" content="!">
+    <title>Elewa knowledgetrees</title>
+
+    <link rel="stylesheet" type="text/css" href="libs/css/google-font-ubuntu.css"/>
+    <link rel="stylesheet" type="text/css" href="libs/css/bootstrap-3.3.5.min.css"/>
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/elewa.css"/>
+    <link rel="stylesheet" type="text/css" href="css/kt-extensions.css"/>
+    <link rel="stylesheet" type="text/css" href="css/sticky.css"/>
+</head>
+
+<body ng-app="app" id="app">
+    <!-- Body -->
+    <div ui-view="root" class="body-root"><img src="img/loader-small.gif"/> Loading Elewa</div>
+    <!-- /.body -->
+    <script type="text/javascript" src="libs/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="libs/js/bootstrap-3.3.5.min.js"></script>
+    <script type="text/javascript" src="libs/js/angular-1.5.min.js"></script>
+    <script type="text/javascript" src="libs/js/angular-animate-1.5.min.js"></script>
+    <script type="text/javascript" src="libs/js/angular-ui-bootstrap-1.1.2.min.js"></script>
+    <script type="text/javascript" src="libs/js/angular-ui-router-0.2.15.min.js"></script>
+    <script type="text/javascript" src="libs/js/d3-3.5.16.min.js"></script>
+    <script type="text/javascript" src="libs/js/d3.legend.js"></script>
+    <script type="text/javascript" src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+    <!-- Modules -->
+    <script type="text/javascript" src="src/common/common.js"></script>
+    <script type="text/javascript" src="src/home/home.js"></script>
+    <script type="text/javascript" src="src/stickytree/stickytree.js"></script>
+    <!-- App -->
+    <script type="text/javascript" src="src/app.js"></script>
+    <!-- Factories & Interceptors -->
+    <!-- Services -->
+    <script type="text/javascript" src="src/home/services/knowledgeTreeRawDataService.js"></script>
+    <script type="text/javascript" src="src/home/services/knowledgeTreeRawRenderWorker.js"></script>
+    <script type="text/javascript" src="src/home/services/knowledgeTreeRawRenderService.js"></script>
+    <!-- Services Tree -->
+    <script type="text/javascript" src="src/stickytree/services/stickytreeDataService.js"></script>
+    <script type="text/javascript" src="src/stickytree/services/stickytreeRenderService.js"></script>
+    <script type="text/javascript" src="src/stickytree/services/swimminglanesRenderWorker.js"></script>
+    <script type="text/javascript" src="src/stickytree/services/graphRenderWorker.js"></script>
+    <!-- Controllers -->
+    <script type="text/javascript" src="src/common/controllers/pageHeaderController.js"></script>
+    <script type="text/javascript" src="src/home/controllers/knowledgeTreeRawDataController.js"></script>
+    <!-- Controllers Tree -->
+    <script type="text/javascript" src="src/stickytree/controllers/stickytreeController.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+/* GLOBAL CSS START*/
+body, html{
+  background-color: #FFF;
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+/**
+*  Fixes Opera/contenteditable bug:
+*  src: http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952
+*/
+.clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    display: table;
+    content:"";
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
+/* GLOBAL CSS END*/
+
+/* D3 GRAPH START */
+.link {
+  stroke: #000;
+  stroke-width: 1.5px;
+  z-index: 25;
+}
+
+.node {
+  cursor: move;
+  fill: #FFF; /*#ccc;*/
+  stroke: #000;
+  stroke-width: 1.5px;
+  z-index: 50;
+}
+
+.node.fixed {
+  fill: #f00;
+}
+
+#app > div{
+    min-height:100%;
+    position:relative;
+}
+
+#graph {
+    height: 700px;
+}
+
+#d3-renderframe{
+    width:100%;
+    height: 719px;
+    resize: both;
+    overflow: auto;
+    position:relative;
+}
+
+#d3-renderframe svg{
+  position:absolute;
+  left:0;
+  top:0;
+}
+/* D3 GRAPH END */
+
+/* LEGEND START */
+.legendBox{
+  margin-left:15px;
+  margin-top:40px;
+}
+
+.legendBase{
+  margin-top:20px;
+}
+
+.legend {
+  margin: 0px 20px 20px 20px;
+  border: solid 3px rgba(0,0,0,0.2);
+}
+
+.legend span{
+  display:block;
+
+    padding:5px;
+}
+
+.infoBox {
+  margin-top: 20px;
+  margin-left: 15px;
+}
+/* LEGEND END */
+
+/* SWIMMINGLANES FOCUS START */
+.layer.swimmingLane{
+  opacity:0.9;
+}
+
+.layer.swimmingLane.focus{
+  opacity:1 !important;
+  z-index:99;
+}
+
+.layer.swimmingLane.faded.forcefocus,.layer.swimmingLane.focus.forcefocus, .chapternode.faded.forcefocus, .chapternode.focus.forcefocus {
+  opacity:1 !important;
+  z-index:99;
+}
+
+.layer.swimmingLane.faded{
+  opacity:0.2 !important;
+}
+/* SWIMMINGLANES END */
+
+/* CHAPTERNODES FOCUS START */
+.chapternode{
+  opacity:1;
+}
+
+.chapternode.focus{
+  opacity:1 !important;
+}
+
+.chapternode.faded, .chapterlink.faded{
+  opacity:0 !important;
+}
+
+.chapterlink.faded.forceShow, .chapterlink.focus.forceShow{
+  opacity:0.3 !important;
+}
+/* CHAPTERNODES END */
+
+/* ELEWA FIXES START */
+#container{
+  padding-bottom:200px !important;
+}
+
+footer{
+  position:absolute;
+  bottom:0;
+  height:181px;
+  width:100%;
+  background-color: #202020;
+}
+
+@media screen and (max-width: 767px) {
+    footer {
+          height:366px;
+    }
+    #container{
+      padding-bottom:400px !important;
+    }
+}
+
+#home-logo-holder{
+  margin-top:-3px;
+}
+/* ELEWA FIXES END */

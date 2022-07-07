@@ -1,0 +1,42 @@
+/*
+ * 	Contains the extensions to the css needed for rendering knowledge trees. 
+ */
+path.link {
+  fill: none;
+  stroke: #666;
+  stroke-width: 1.5px;
+
+}
+path {
+  z-index: 10;
+}
+circle {
+  z-index: 1;
+  fill: #ccc;
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+text {
+  fill: #000;
+  font: 10px sans-serif;
+  pointer-events: none;
+  z-index: 9;
+}
+
+#d3-renderframe {
+	border:1px solid black;
+}
+
+div.tooltip { 
+    position: absolute;     
+    text-align: center;     
+    width: 250px;          
+    height: 28px;         
+    padding: 2px;       
+    font: 1em sans-serif;    
+    background: lightsteelblue; 
+    border: 0px;    
+    border-radius: 8px;     
+    pointer-events: none;  
+    text-align: center;   
+}
